@@ -8,6 +8,7 @@ function App() {
         <main>
           <Dictionary />
         </main>
+        <footer>Coded By Simbiat Taofeek</footer>
       </div>
     </div>
   );
