@@ -4,7 +4,7 @@ import axios from "axios";
 import Results from "./Results";
 
 export default function Dictionary() {
-  let [word, setWord] = useState(null);
+  let [word, setWord] = useState("book");
   let [results, setResults] = useState(null);
 
   function displaySearch(response) {
@@ -30,17 +30,21 @@ export default function Dictionary() {
     <div className="Dictionary theme">
       <section>
         {" "}
+        <h1>📙 A Court of Words</h1>
         <form onSubmit={search}>
           <input
             type="search"
-            placeholder="Search a word"
+            placeholder="Whisper a word into the night..."
             onChange={handleWordChange}
           ></input>
+          <button type="submit">Reveal</button>
         </form>
         <br />
       </section>
-
-      <Results results={results} />
+      <section>
+        {" "}
+        <Results results={results} />
+      </section>
     </div>
   );
 }
