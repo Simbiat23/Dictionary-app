@@ -16,7 +16,7 @@ function App() {
             rel="noreferrer"
           >
             {" "}
-            <i class="fa-brands fa-github"></i>
+            <i className="fa-brands fa-github"></i>
           </a>{" "}
         </footer>
       </div>
