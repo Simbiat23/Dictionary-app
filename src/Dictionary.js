@@ -37,7 +37,9 @@ export default function Dictionary() {
             placeholder="Whisper a word into the night..."
             onChange={handleWordChange}
           ></input>
-          <button type="submit">Reveal</button>
+          <button className="form-btn" type="submit">
+            Reveal
+          </button>
         </form>
         <br />
       </section>

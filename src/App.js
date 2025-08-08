@@ -8,7 +8,17 @@ function App() {
         <main>
           <Dictionary />
         </main>
-        <footer>Coded By Simbiat Taofeek</footer>
+        <footer>
+          Coded By Simbiat Taofeek and opensorced on{" "}
+          <a
+            href="https://github.com/Simbiat23/Dictionary-app"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            <i class="fa-brands fa-github"></i>
+          </a>{" "}
+        </footer>
       </div>
     </div>
   );

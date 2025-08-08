@@ -29,7 +29,7 @@ export default function Phonetics(props) {
   if (audio) {
     return (
       <div className="Phonetics">
-        <p>{text}</p>
+        <p className="phonetic">{text}</p>
         <button onClick={playAudio}>
           <img
             src="https://img.icons8.com/external-flatart-icons-lineal-color-flatarticons/50/000000/external-speaker-ux-and-ui-flatart-icons-lineal-color-flatarticons.png"

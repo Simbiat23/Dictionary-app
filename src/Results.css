@@ -1,7 +1,8 @@
 .word-title {
   font-family: "Playfair Display", serif;
-  font-size: 1.5rem;
+  font-size: 36px;
   color: #c1a057;
+  font-weight: bold;
   border-bottom: 1px solid #c1a057;
   padding-bottom: 4px;
   margin-bottom: 12px;
