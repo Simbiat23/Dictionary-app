@@ -4,8 +4,9 @@ body {
 }
 
 .Dictionary {
-  max-width: 700px;
+  max-width: 960px;
   margin: auto;
+
   background: linear-gradient(to bottom right, #0d0b14, #1f1a29);
   padding: 20px;
   border-radius: 15px;
