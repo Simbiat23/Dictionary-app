@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { use, useState } from "react";
 import "./Dictionary.css";
 import axios from "axios";
 import Results from "./Results";
 
 export default function Dictionary() {
-  let [word, setWord] = useState("book");
+  let [word, setWord] = useState("");
   let [results, setResults] = useState(null);
 
   function displaySearch(response) {
@@ -14,9 +14,7 @@ export default function Dictionary() {
     //   meaning: response.data.meanings[0].definition,
     //   type: response.data.meaning[0].partOfSpeech,
   }
-  function displayImage(response) {
-    console.log(response.data);
-  }
+
   function search(event) {
     event.preventDefault();
     if (!word.trim()) return;
@@ -24,8 +22,6 @@ export default function Dictionary() {
     let apiKey = "t07aaefccae3394of62526e7dc0c0bad";
     let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${word}&key=${apiKey}`;
     axios.get(apiUrl).then(displaySearch);
-    const imgApiUrl = `https://api.shecodes.io/images/v1/search?query=${word}&key=${apiKey}`;
-    axios.get(imgApiUrl).then(displayImage);
   }
   function handleWordChange(event) {
     setWord(event.target.value);
